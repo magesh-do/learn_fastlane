@@ -1,0 +1,17 @@
+devices([
+  "Nexus 5X",
+  "Nexus 6P",
+  "Pixel 2",
+  "Pixel 3"
+])
+
+languages([
+  "en-US",
+  "es-ES"
+])
+
+output_directory("./fastlane/screenshots")  # Output directory for screenshots
+
+app_package("com.example.flutter_app")  # Replace with your app's package name
+
+app_name("flutter_app")  # Replace with your actual app name

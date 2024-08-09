@@ -1,0 +1,18 @@
+default_platform(:android)
+
+platform :android do
+  desc "Take screenshots of the Android app"
+  lane :screenshots do
+    screenshotbot(
+      api_key: ENV["SCREENSHOTBOT_API_KEY"],  # Use environment variable for API key
+      api_secret: ENV["SCREENSHOTBOT_API_SECRET"],  # Use environment variable for API secret
+      screenshots_directory: "fastlane/screenshots",
+      # Optional: specify other parameters if needed
+      # Examples:
+      # repo_url: "https://github.com/your/repo",
+      # channel: "default",
+      # is_pr: false
+    )
+  end
+end
+

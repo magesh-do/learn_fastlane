@@ -1,0 +1,17 @@
+# fastlane/Snapfile
+
+devices([
+  "iPhone 8",
+  "iPhone 8 Plus",
+  "iPhone X",
+  "iPad Pro (9.7-inch)"
+])
+
+languages([
+  "en-US",
+  "es-ES"
+])
+
+output_directory("./fastlane/screenshots")
+
+scheme("Runner")
